@@ -1,5 +1,5 @@
 module.exports = function (obj, target){
-    target in obj
+    return target in obj
         ? obj[target]
         : Object.values(obj).reduce((acc, val) => {
               if (acc !== undefined) return acc;
