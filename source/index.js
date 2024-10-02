@@ -1,6 +1,6 @@
 const errorCatching = require("./lib/errorCatching");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
-const findIndex = require("./lib/findIndex");
+const optimizeArray = require("./lib/optimizeArray");
 
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',keyOfObject : '',nestedArrayIndex : undefined}){
     try {
@@ -11,13 +11,12 @@ function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',keyOfO
             throw new Error(error);
         }
 
+        
         const sortFunction = findBestSortAlgorithm(arrayCondition,sortAlgorithm);
-        console.log(sortFunction);
-        if (typeof keyOfObject !== "undefined") {
-            
-        } else {
-
-        }    
+        const optimizedArray = optimizeArray(arr,keyOfObject,nestedArrayIndex);
+        
+        
+        
     } catch (err) {
         return new Error(err)
     }
