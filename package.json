@@ -1,0 +1,37 @@
+{
+  "name": "order-js",
+  "version": "0.1.0",
+  "description": "A package for every sort",
+  "main": "./source/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariankoochak/order-js.git"
+  },
+  "keywords": [
+    "sort",
+    "order",
+    "javascript",
+    "node",
+    "nodejs.node.js",
+    "express",
+    "expressjs",
+    "fastify",
+    "nestjs",
+    "nextjs",
+    "next.js",
+    "next",
+    "react",
+    "reactjs",
+    "react.js",
+    "js"
+  ],
+  "author": "Arian Koochak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ariankoochak/order-js/issues"
+  },
+  "homepage": "https://github.com/ariankoochak/order-js#readme"
+}
