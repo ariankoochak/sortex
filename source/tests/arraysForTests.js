@@ -123,3 +123,12 @@ const UsersDatasArrayMode = [
         purchase:  [8,"53000000"]
     },
 ];
+
+const nestedArray = [
+    ["Abbas", "Elahi", ["19"]],
+    ["arian", "Elahi", ["18"]],
+    ["Hossein", "Elahi", ["19"]],
+    ["Ali", "mohammadi", ["15.5"]],
+    ["Reza", "Hosseini", ["11"]],
+    ["Jafar", "Karimi", ["14"]],
+];
