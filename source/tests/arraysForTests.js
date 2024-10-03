@@ -87,3 +87,39 @@ const UsersDatas = [
         },
     },
 ];
+
+const UsersDatasArrayMode = [
+    {
+        name: "Abbas",
+        lastName: "Elahi",
+        purchase: [3,"23000000"]
+    },
+    {
+        name: "Arian",
+        lastName: "Elahi",
+        purchase:  [5, "50000000"]
+    },
+    {
+        name: "Hossein",
+        lastName: "Elahi",
+        purchase:  [1,"13000000"]
+    },
+    ,
+    {
+        name: "Ali",
+        lastName: "mohammadi",
+        purchase:  [5,"21000000"]
+    },
+    ,
+    {
+        name: "Reza",
+        lastName: "Hosseini",
+        purchase:  [0,"0"]
+    },
+    ,
+    {
+        name: "Jafar",
+        lastName: "Karimi",
+        purchase:  [8,"53000000"]
+    },
+];
