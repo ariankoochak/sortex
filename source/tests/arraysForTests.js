@@ -34,6 +34,39 @@ const StudentList = [
     },
 ];
 
+const SortedStudentList = [
+    {
+        name: "Reza",
+        lastName: "Hosseini",
+        score: "11",
+    },
+    {
+        name: "Jafar",
+        lastName: "Karimi",
+        score: "14",
+    },
+    {
+        name: "Ali",
+        lastName: "mohammadi",
+        score: "15.5",
+    },
+    {
+        name: "Arian",
+        lastName: "Elahi",
+        score: "18",
+    },
+    {
+        name: "Abbas",
+        lastName: "Elahi",
+        score: "19",
+    },
+    {
+        name: "Hossein",
+        lastName: "Elahi",
+        score: "19",
+    },
+];
+
 const UsersDatas = [
     {
         name: "Abbas",
@@ -88,6 +121,57 @@ const UsersDatas = [
     },
 ];
 
+const SortedUsersDatas = [
+    {
+        name: "Reza",
+        lastName: "Hosseini",
+        purchase: {
+            purchaseCount: 0,
+            purchaseSum: "0",
+        },
+    },
+    {
+        name: "Hossein",
+        lastName: "Elahi",
+        purchase: {
+            purchaseCount: 1,
+            purchaseSum: "13000000",
+        },
+    },
+    {
+        name: "Abbas",
+        lastName: "Elahi",
+        purchase: {
+            purchaseCount: 3,
+            purchaseSum: "23000000",
+        },
+    },
+    {
+        name: "Arian",
+        lastName: "Elahi",
+        purchase: {
+            purchaseCount: 5,
+            purchaseSum: "50000000",
+        },
+    },
+    {
+        name: "Ali",
+        lastName: "mohammadi",
+        purchase: {
+            purchaseCount: 5,
+            purchaseSum: "21000000",
+        },
+    },
+    {
+        name: "Jafar",
+        lastName: "Karimi",
+        purchase: {
+            purchaseCount: 8,
+            purchaseSum: "53000000",
+        },
+    },
+];
+
 const UsersDatasArrayMode = [
     {
         name: "Abbas",
@@ -110,7 +194,6 @@ const UsersDatasArrayMode = [
         lastName: "mohammadi",
         purchase:  [5,"21000000"]
     },
-    ,
     {
         name: "Reza",
         lastName: "Hosseini",
@@ -124,6 +207,40 @@ const UsersDatasArrayMode = [
     },
 ];
 
+const SortedUsersDatasArrayMode = [
+    {
+        name: "Reza",
+        lastName: "Hosseini",
+        purchase: [0, "0"],
+    },
+    {
+        name: "Hossein",
+        lastName: "Elahi",
+        purchase: [1, "13000000"],
+    },
+    {
+        name: "Abbas",
+        lastName: "Elahi",
+        purchase: [3, "23000000"],
+    },
+    {
+        name: "Arian",
+        lastName: "Elahi",
+        purchase: [5, "50000000"],
+    },
+    {
+        name: "Ali",
+        lastName: "mohammadi",
+        purchase: [5, "21000000"],
+    },
+    ,
+    {
+        name: "Jafar",
+        lastName: "Karimi",
+        purchase: [8, "53000000"],
+    },
+];
+
 const nestedArray = [
     ["Abbas", "Elahi", ["19"]],
     ["arian", "Elahi", ["18"]],
@@ -132,3 +249,23 @@ const nestedArray = [
     ["Reza", "Hosseini", ["11"]],
     ["Jafar", "Karimi", ["14"]],
 ];
+
+const SortedNestedArray = [
+    ["Reza", "Hosseini", ["11"]],
+    ["Jafar", "Karimi", ["14"]],
+    ["Ali", "mohammadi", ["15.5"]],
+    ["arian", "Elahi", ["18"]],
+    ["Abbas", "Elahi", ["19"]],
+    ["Hossein", "Elahi", ["19"]],
+];
+
+module.exports = {
+    StudentList,
+    SortedStudentList,
+    UsersDatas,
+    SortedUsersDatas,
+    UsersDatasArrayMode,
+    SortedUsersDatasArrayMode,
+    nestedArray,
+    SortedNestedArray,
+};
