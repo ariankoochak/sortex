@@ -33,3 +33,57 @@ const StudentList = [
         score: "14",
     },
 ];
+
+const UsersDatas = [
+    {
+        name: "Abbas",
+        lastName: "Elahi",
+        purchase: {
+            purchaseCount: 3,
+            purchaseSum : "23000000",
+        },
+    },
+    {
+        name: "Arian",
+        lastName: "Elahi",
+        purchase: {
+            purchaseCount: 5,
+            purchaseSum : "50000000",
+        },
+    },
+    {
+        name: "Hossein",
+        lastName: "Elahi",
+        purchase: {
+            purchaseCount: 1,
+            purchaseSum : "13000000",
+        },
+    },
+    ,
+    {
+        name: "Ali",
+        lastName: "mohammadi",
+        purchase: {
+            purchaseCount: 5,
+            purchaseSum : "21000000",
+        },
+    },
+    ,
+    {
+        name: "Reza",
+        lastName: "Hosseini",
+        purchase: {
+            purchaseCount: 0,
+            purchaseSum : "0",
+        },
+    },
+    ,
+    {
+        name: "Jafar",
+        lastName: "Karimi",
+        purchase: {
+            purchaseCount: 8,
+            purchaseSum : "53000000",
+        },
+    },
+];
