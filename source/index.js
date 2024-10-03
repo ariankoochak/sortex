@@ -31,5 +31,9 @@ const testArr = [
 
 manualSort(testArr,{arrayCondition : 'random',nestedArrayIndex : '0.2.0.1'})
 
+module.exports = {
+    manualSort,
+}
+
 
 
