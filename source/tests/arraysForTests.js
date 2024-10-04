@@ -14,19 +14,16 @@ const StudentList = [
         lastName: "Elahi",
         score: "19",
     },
-    ,
     {
         name: "Ali",
         lastName: "mohammadi",
         score: "15.5",
     },
-    ,
     {
         name: "Reza",
         lastName: "Hosseini",
         score: "11",
     },
-    ,
     {
         name: "Jafar",
         lastName: "Karimi",
@@ -92,7 +89,6 @@ const UsersDatas = [
             purchaseSum : "13000000",
         },
     },
-    ,
     {
         name: "Ali",
         lastName: "mohammadi",
@@ -101,7 +97,6 @@ const UsersDatas = [
             purchaseSum : "21000000",
         },
     },
-    ,
     {
         name: "Reza",
         lastName: "Hosseini",
@@ -110,7 +105,6 @@ const UsersDatas = [
             purchaseSum : "0",
         },
     },
-    ,
     {
         name: "Jafar",
         lastName: "Karimi",
@@ -188,7 +182,6 @@ const UsersDatasArrayMode = [
         lastName: "Elahi",
         purchase:  [1,"13000000"]
     },
-    ,
     {
         name: "Ali",
         lastName: "mohammadi",
@@ -199,7 +192,6 @@ const UsersDatasArrayMode = [
         lastName: "Hosseini",
         purchase:  [0,"0"]
     },
-    ,
     {
         name: "Jafar",
         lastName: "Karimi",
@@ -233,7 +225,6 @@ const SortedUsersDatasArrayMode = [
         lastName: "mohammadi",
         purchase: [5, "21000000"],
     },
-    ,
     {
         name: "Jafar",
         lastName: "Karimi",
