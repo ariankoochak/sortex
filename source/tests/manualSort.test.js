@@ -27,3 +27,13 @@ test("manualSort => nestedArray test", () => {
     };
     expect(test()).toEqual(SortedNestedArray);
 });
+
+test("manualSort => bubbleSort test", () => {
+    const test = () => {
+        return manualSort(StudentList, {
+            keyOfObject: "score",
+            sortAlgorithm: "bubble",
+        });
+    };
+    expect(test()).toEqual(SortedStudentList);
+});
