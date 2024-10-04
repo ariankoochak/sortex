@@ -1,5 +1,6 @@
 const errorCatching = require("./lib/errorCatching");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
+const generateMainArr = require("./lib/generateMainArr");
 const optimizeArray = require("./lib/optimizeArray");
 
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',keyOfObject : '',nestedArrayIndex : undefined}){
@@ -10,12 +11,14 @@ function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',keyOfO
         if (error !== undefined) {
             throw new Error(error);
         }
-
         
         const sortFunction = findBestSortAlgorithm(arrayCondition,sortAlgorithm);
         const optimizedArray = optimizeArray(arr,keyOfObject,nestedArrayIndex);
         
-        
+        const sortedOptimizedArray = sortFunction(optimizedArray);
+        const result = generateMainArr(arr,sortedOptimizedArray);
+
+        return result
         
     } catch (err) {
         return new Error(err)
@@ -23,13 +26,10 @@ function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',keyOfO
 }
 
 
-const testArr = [
-    [[1, [3], [[0, 5], 3, 4]], ["sd"], ["as"]],
-    [[1, [5], [[4, 3], 1, 2]], ["da"], ["df"]],
-    [[1, [2], [[-1, 2], 9, 1]], ["12"], ["jk"]],
-];
 
-manualSort(testArr,{arrayCondition : 'random',nestedArrayIndex : '0.2.0.1'})
+// const res = manualSort(StudentList, { sortAlgorithm: "bubble", keyOfObject: "score" });
+// console.log(res);
+
 
 module.exports = {
     manualSort,
