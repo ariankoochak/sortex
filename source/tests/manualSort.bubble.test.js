@@ -1,35 +1,14 @@
 const { manualSort } = require("..");
-const { StudentList, SortedStudentList, UsersDatas, SortedUsersDatas, nestedArray, SortedNestedArray, UsersDatasArrayMode, SortedUsersDatasArrayMode } = require("./arraysForTests");
-
-test("manualSort => StudentList test with arrayCondition", () => {
-    const test = () => {
-        return manualSort(StudentList, {
-            valuePath: "score",
-            arrayCondition: "random",
-        });
-    };
-    expect(test()).toEqual(SortedStudentList);
-});
-
-test("manualSort => UsersDatas test with arrayCondition", () => {
-    const test = () => {
-        return manualSort(UsersDatas, {
-            valuePath: "purchaseCount",
-            arrayCondition: "random",
-        });
-    };
-    expect(test()).toEqual(SortedUsersDatas);
-});
-
-test("manualSort => nestedArray test with arrayCondition", () => {
-    const test = () => {
-        return manualSort(nestedArray, {
-            valuePath: "2.0",
-            arrayCondition: "random",
-        });
-    };
-    expect(test()).toEqual(SortedNestedArray);
-});
+const {
+    StudentList,
+    SortedStudentList,
+    UsersDatas,
+    SortedUsersDatas,
+    nestedArray,
+    SortedNestedArray,
+    UsersDatasArrayMode,
+    SortedUsersDatasArrayMode,
+} = require("./arraysForTests");
 
 test("manualSort => bubbleSort test with arrayCondition", () => {
     const test = () => {
@@ -70,4 +49,3 @@ test("manualSort => bubbleSort test with arrayCondition", () => {
     };
     expect(test()).toEqual(SortedNestedArray);
 });
-
