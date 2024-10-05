@@ -1,5 +1,5 @@
 const { manualSort } = require("..");
-const { StudentList, SortedStudentList, UsersDatas, SortedUsersDatas, nestedArray, SortedNestedArray } = require("./arraysForTests");
+const { StudentList, SortedStudentList, UsersDatas, SortedUsersDatas, nestedArray, SortedNestedArray, UsersDatasArrayMode, SortedUsersDatasArrayMode } = require("./arraysForTests");
 
 test("manualSort => StudentList test", () => {
     const test = () => {
@@ -11,7 +11,7 @@ test("manualSort => StudentList test", () => {
 test("manualSort => UsersDatas test", () => {
     const test = () => {
         return manualSort(UsersDatas, {
-            keyOfObject: "purchaseCount",
+            valuePath: "purchaseCount",
             arrayCondition: "random",
         });
     };
@@ -21,7 +21,7 @@ test("manualSort => UsersDatas test", () => {
 test("manualSort => nestedArray test", () => {
     const test = () => {
         return manualSort(nestedArray, {
-            nestedArrayIndex : '2.0',
+            valuePath : '2.0',
             arrayCondition: "random",
         });
     };
@@ -31,7 +31,7 @@ test("manualSort => nestedArray test", () => {
 test("manualSort => bubbleSort test", () => {
     const test = () => {
         return manualSort(StudentList, {
-            keyOfObject: "score",
+            valuePath: "score",
             sortAlgorithm: "bubble",
         });
     };
@@ -41,7 +41,7 @@ test("manualSort => bubbleSort test", () => {
 test("manualSort => bubbleSort test", () => {
     const test = () => {
         return manualSort(UsersDatas, {
-            keyOfObject: "purchaseCount",
+            valuePath: "purchase.purchaseCount",
             sortAlgorithm: "bubble",
         });
     };

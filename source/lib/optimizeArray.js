@@ -1,17 +1,13 @@
-const findIndex = require("./findIndex");
-const findKey = require("./findKey");
+const findValue = require("./findValue");
 
-module.exports = function (arr, keyOfObject, nestedArrayIndex) {
+module.exports = function (arr, valuePath) {
     const rtnArray = []
     for(let i = 0; i < arr.length;i++){
         let compareData;
-        if(typeof keyOfObject !== 'undefined'){
-            compareData = findKey(arr[i],keyOfObject);
-        }
-        else if(typeof nestedArrayIndex !== 'undefined'){
-            compareData = findIndex(arr[i],nestedArrayIndex);
-        }
-        else{
+        if (typeof valuePath !== "undefined") {
+            compareData = findValue(arr[i], valuePath);
+        } 
+        else {
             compareData = arr[i];
         }
         const pushArr = [i,compareData];
