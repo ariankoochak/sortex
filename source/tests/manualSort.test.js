@@ -37,3 +37,14 @@ test("manualSort => bubbleSort test", () => {
     };
     expect(test()).toEqual(SortedStudentList);
 });
+
+test("manualSort => bubbleSort test", () => {
+    const test = () => {
+        return manualSort(UsersDatas, {
+            keyOfObject: "purchaseCount",
+            sortAlgorithm: "bubble",
+        });
+    };
+    expect(test()).toEqual(SortedUsersDatas);
+});
+
