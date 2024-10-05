@@ -2,7 +2,6 @@ const errorCatching = require("./lib/errorCatching");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
 const generateMainArr = require("./lib/generateMainArr");
 const optimizeArray = require("./lib/optimizeArray");
-const { StudentList } = require("./tests/arraysForTests");
 
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''}){
     try {
