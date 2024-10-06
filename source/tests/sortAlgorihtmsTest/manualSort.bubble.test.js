@@ -1,4 +1,4 @@
-const { manualSort } = require("..");
+const { manualSort } = require("../..");
 const {
     StudentList,
     SortedStudentList,
@@ -8,7 +8,7 @@ const {
     SortedNestedArray,
     UsersDatasArrayMode,
     SortedUsersDatasArrayMode,
-} = require("./arraysForTests");
+} = require("../arraysForTests");
 
 test("manualSort => bubbleSort test with arrayCondition", () => {
     const test = () => {

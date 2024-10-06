@@ -1,4 +1,4 @@
-const { manualSort } = require("..");
+const { manualSort } = require("../..");
 const {
     StudentList,
     SortedStudentList,
@@ -8,43 +8,43 @@ const {
     SortedNestedArray,
     UsersDatasArrayMode,
     SortedUsersDatasArrayMode,
-} = require("./arraysForTests");
+} = require("../arraysForTests");
 
-test("manualSort => quickSort test :: StudentList", () => {
+test("manualSort => selectionSort test :: StudentList", () => {
     const test = () => {
         return manualSort(StudentList, {
             valuePath: "score",
-            sortAlgorithm: "quick",
+            sortAlgorithm: "selection",
         });
     };
     expect(test()).toEqual(SortedStudentList);
 });
 
-test("manualSort => quickSort test :: UserDatas", () => {
+test("manualSort => selectionSort test :: UserDatas", () => {
     const test = () => {
         return manualSort(UsersDatas, {
             valuePath: "purchase.purchaseCount",
-            sortAlgorithm: "quick",
+            sortAlgorithm: "selection",
         });
     };
     expect(test()).toEqual(SortedUsersDatas);
 });
 
-test("manualSort => quickSort test :: UsersDatasArrayMode", () => {
+test("manualSort => selectionSort test :: UsersDatasArrayMode", () => {
     const test = () => {
         return manualSort(UsersDatasArrayMode, {
             valuePath: "purchase.0",
-            sortAlgorithm: "quick",
+            sortAlgorithm: "selection",
         });
     };
     expect(test()).toEqual(SortedUsersDatasArrayMode);
 });
 
-test("manualSort => quickSort test :: nestedArray", () => {
+test("manualSort => selectionSort test :: nestedArray", () => {
     const test = () => {
         return manualSort(nestedArray, {
             valuePath: "2.0",
-            sortAlgorithm: "quick",
+            sortAlgorithm: "selection",
         });
     };
     expect(test()).toEqual(SortedNestedArray);
