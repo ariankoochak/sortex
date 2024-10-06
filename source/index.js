@@ -30,7 +30,9 @@ function automateSort(arr, options = { valuePath: "" }) {
     try {
         const {sortAlgorithm, valuePath } = options;
 
-        const arrayCondition = analyzeArrayCondition(arr);
+        const optimizedArray = optimizeArray(arr, valuePath);
+
+        const arrayCondition = analyzeArrayCondition(optimizedArray);
 
         const error = errorCatching(arr,arrayCondition,sortAlgorithm,valuePath);
         if (error !== undefined) {
@@ -41,7 +43,6 @@ function automateSort(arr, options = { valuePath: "" }) {
             arrayCondition,
             sortAlgorithm
         );
-        const optimizedArray = optimizeArray(arr, valuePath);
 
         const sortedOptimizedArray = sortFunction(optimizedArray);
         const result = generateMainArr(arr, sortedOptimizedArray);
