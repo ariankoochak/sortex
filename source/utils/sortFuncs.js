@@ -40,7 +40,7 @@ const sorts = {
     },
     merge: function (arr) {
 
-        function merge(left, right) {
+         const merge = (left, right) => {
             let sortedArr = []; // the sorted items will go here
             while (left.length && right.length) {
                 // Insert the smallest item into sortedArr
@@ -54,7 +54,7 @@ const sorts = {
             return [...sortedArr, ...left, ...right];
         }
         
-        function mergeSort(arr) {
+         const mergeSort = (arr) => {
             // Base case
             if (arr.length <= 1) return arr;
             let mid = Math.floor(arr.length / 2);
