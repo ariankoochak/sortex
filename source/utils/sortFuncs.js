@@ -13,7 +13,18 @@ const sorts = {
         return arr;
     },
     selection: function (arr) {
-        console.log(arr);
+        for (let i = 0; i < arr.length; i++) {
+            let lowest = i;
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[lowest][1] > arr[j][1]) {
+                    lowest = j;
+                }
+            }
+            if (i !== lowest) {
+                [arr[i], arr[lowest]] = [arr[lowest], arr[i]];
+            }
+        }
+        return arr;
     },
     bubble: function (arr) {
         for (let i = 0; i < arr.length; i++) {
