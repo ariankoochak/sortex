@@ -93,7 +93,7 @@ const UsersDatas = [
         name: "Ali",
         lastName: "mohammadi",
         purchase: {
-            purchaseCount: 5,
+            purchaseCount: 6,
             purchaseSum : "21000000",
         },
     },
@@ -152,7 +152,7 @@ const SortedUsersDatas = [
         name: "Ali",
         lastName: "mohammadi",
         purchase: {
-            purchaseCount: 5,
+            purchaseCount: 6,
             purchaseSum: "21000000",
         },
     },
@@ -185,7 +185,7 @@ const UsersDatasArrayMode = [
     {
         name: "Ali",
         lastName: "mohammadi",
-        purchase:  [5,"21000000"]
+        purchase:  [6,"21000000"]
     },
     {
         name: "Reza",
@@ -223,7 +223,7 @@ const SortedUsersDatasArrayMode = [
     {
         name: "Ali",
         lastName: "mohammadi",
-        purchase: [5, "21000000"],
+        purchase: [6, "21000000"],
     },
     {
         name: "Jafar",
@@ -233,7 +233,7 @@ const SortedUsersDatasArrayMode = [
 ];
 
 const nestedArray = [
-    ["Abbas", "Elahi", ["19"]],
+    ["Abbas", "Elahi", ["20"]],
     ["arian", "Elahi", ["18"]],
     ["Hossein", "Elahi", ["19"]],
     ["Ali", "mohammadi", ["15.5"]],
@@ -246,8 +246,8 @@ const SortedNestedArray = [
     ["Jafar", "Karimi", ["14"]],
     ["Ali", "mohammadi", ["15.5"]],
     ["arian", "Elahi", ["18"]],
-    ["Abbas", "Elahi", ["19"]],
     ["Hossein", "Elahi", ["19"]],
+    ["Abbas", "Elahi", ["20"]],
 ];
 
 module.exports = {
