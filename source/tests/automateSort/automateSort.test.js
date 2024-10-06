@@ -4,7 +4,7 @@ const {
     UsersDatas,
     nestedArray,
     UsersDatasArrayMode,
-} = require("../arraysForTests");
+} = require("../arraysForTest/randomArray");
 
 test("automateSort", () => {
     const test = () => {

@@ -1,5 +1,14 @@
 const { manualSort } = require("../..");
-const { StudentList, SortedStudentList, UsersDatas, SortedUsersDatas, nestedArray, SortedNestedArray, UsersDatasArrayMode, SortedUsersDatasArrayMode } = require("../arraysForTests");
+const {
+    StudentList,
+    SortedStudentList,
+    UsersDatas,
+    SortedUsersDatas,
+    nestedArray,
+    SortedNestedArray,
+    UsersDatasArrayMode,
+    SortedUsersDatasArrayMode,
+} = require("../arraysForTest/randomArray");
 
 test("manualSort => StudentList test with arrayCondition", () => {
     const test = () => {

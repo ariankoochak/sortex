@@ -8,7 +8,7 @@ const {
     SortedNestedArray,
     UsersDatasArrayMode,
     SortedUsersDatasArrayMode,
-} = require("../arraysForTests");
+} = require("../arraysForTest/randomArray");
 
 test("manualSort => insertionSort test with arrayCondition", () => {
     const test = () => {
