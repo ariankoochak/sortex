@@ -14,7 +14,7 @@ test("manualSort => StudentList test with arrayCondition", () => {
 test("manualSort => UsersDatas test with arrayCondition", () => {
     const test = () => {
         return manualSort(UsersDatas, {
-            valuePath: "purchaseCount",
+            valuePath: "purchase.purchaseCount",
             arrayCondition: "random",
         });
     };
