@@ -84,7 +84,7 @@ const sorts = {
         return arr;
     },
     quick3: function (arr) {
-        function quick3Sort(arr, low, high) {
+        const quick3Sort = (arr, low, high)=> {
             if (low >= high) return; 
 
             let lt = low, 
