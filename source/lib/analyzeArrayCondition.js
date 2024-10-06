@@ -7,15 +7,15 @@ function analyzeArrayCondition(arr) {
   let uniqueValues = new Set(arr);
 
   for (let i = 1; i < n; i++) {
-    if (arr[i] > arr[i - 1]) ascendingCount++;    
-    else if (arr[i] < arr[i - 1]) descendingCount++; 
+    if (arr[i][1] > arr[i - 1][1]) ascendingCount++;    
+    else if (arr[i][1] < arr[i - 1][1]) descendingCount++; 
   }
 
   const ascendingPercentage = ascendingCount / (n - 1);
   const descendingPercentage = descendingCount / (n - 1);
   const uniquePercentage = uniqueValues.size / n;
 
-
+  
   if (ascendingPercentage >= 0.8) return "nearly-sorted"; 
   else if (descendingPercentage >= 0.8) return "reversed";     
   else if (uniquePercentage <= 0.3) return "few-unique";          
