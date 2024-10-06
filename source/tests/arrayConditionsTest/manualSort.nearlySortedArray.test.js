@@ -1,5 +1,5 @@
-const { manualSort } = require("..");
-const { StudentList, SortedStudentList, UsersDatas, SortedUsersDatas, nestedArray, SortedNestedArray, UsersDatasArrayMode, SortedUsersDatasArrayMode } = require("./arraysForTests");
+const { manualSort } = require("../..");
+const { StudentList, SortedStudentList, UsersDatas, SortedUsersDatas, nestedArray, SortedNestedArray, UsersDatasArrayMode, SortedUsersDatasArrayMode } = require("../arraysForTests");
 
 test("manualSort => StudentList test with arrayCondition : nearly sorted", () => {
     const test = () => {
