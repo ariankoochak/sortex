@@ -8,7 +8,7 @@ const {
     SortedNestedArray,
     UsersDatasArrayMode,
     SortedUsersDatasArrayMode,
-} = require("../arraysForTest/randomArray");
+} = require("../arraysForTest/nearlySortedArray");
 
 test("manualSort => StudentList test with arrayCondition : nearly sorted", () => {
     const test = () => {
