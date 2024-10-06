@@ -84,7 +84,31 @@ const sorts = {
         return arr;
     },
     quick3: function (arr) {
-        console.log(arr);
+        function quick3Sort(arr, low, high) {
+            if (low >= high) return; 
+
+            let lt = low, 
+                gt = high, 
+                i = low + 1, 
+                pivot = arr[low]; 
+
+            while (i <= gt) {
+                if (arr[i][1] < pivot[1]) {
+                    [arr[lt], arr[i]] = [arr[i], arr[lt]];
+                    lt++;
+                    i++;
+                } else if (arr[i][1] > pivot[1]) {
+                    [arr[gt], arr[i]] = [arr[i], arr[gt]];
+                    gt--;
+                } else {
+                    i++;
+                }
+            }
+            quick3Sort(arr, low, lt - 1);
+            quick3Sort(arr, gt + 1, high);
+        }
+        quick3Sort(arr, 0, arr.length - 1);
+        return arr;
     },
     quick: function (arr) {
         console.log(arr);
