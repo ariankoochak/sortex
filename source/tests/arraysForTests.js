@@ -2,7 +2,7 @@ const StudentList = [
     {
         name: "Abbas",
         lastName: "Elahi",
-        score: "19",
+        score: "20",
     },
     {
         name: "Arian",
@@ -53,14 +53,14 @@ const SortedStudentList = [
         score: "18",
     },
     {
-        name: "Abbas",
+        name: "Hossein",
         lastName: "Elahi",
         score: "19",
     },
     {
-        name: "Hossein",
+        name: "Abbas",
         lastName: "Elahi",
-        score: "19",
+        score: "20",
     },
 ];
 
