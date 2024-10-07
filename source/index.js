@@ -1,16 +1,18 @@
 const analyzeArrayCondition = require("./lib/analyzeArrayCondition");
-const errorCatching = require("./lib/errorCatching");
+const isWrongDatas = require("./lib/isWrongDatas");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
 const generateMainArr = require("./lib/generateMainArr");
 const optimizeArray = require("./lib/optimizeArray");
+const {StudentList} = require('./tests/arraysForTest/randomArray')
 
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''}){
     try {
         const { arrayCondition, sortAlgorithm, valuePath} = options;
 
-        const error = errorCatching(arr,arrayCondition,sortAlgorithm,valuePath);
-        if (error !== undefined) {
-            throw new Error(error);
+        const isHaveError = isWrongDatas(arr,arrayCondition,sortAlgorithm,valuePath);
+
+        if (isHaveError === true) {
+            throw Error
         }
         
         const sortFunction = findBestSortAlgorithm(arrayCondition,sortAlgorithm);
@@ -22,7 +24,7 @@ function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valueP
         return result
         
     } catch (err) {
-        return new Error(err)
+        return []
     }
 }
 
@@ -56,7 +58,10 @@ function automateSort(arr, options = { valuePath: "" }) {
 
 
 // const res = manualSort(StudentList, { sortAlgorithm: "bubble", valuePath: "score" });
-// console.log(res);
+// const res = manualSort([3,4,2],{sortAlgorithm : "bubble",valuePath : "score"});
+// const res = manualSort(StudentList,{sortAlgorithm : "bubble",valuePath : "score"});
+
+console.log(res);
 
 
 module.exports = {

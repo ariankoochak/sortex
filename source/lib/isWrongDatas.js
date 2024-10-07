@@ -39,6 +39,6 @@ module.exports = function (mainArr, arrayCondition, sortAlgorithm, valuePath) {
             }
         }
     } catch (err) {
-        return new Error(err);
+        return true;
     }
 };
