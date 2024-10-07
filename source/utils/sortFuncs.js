@@ -68,7 +68,26 @@ const sorts = {
 
     },
     heap: function (arr) {
-        console.log(arr);
+        let l = arr.length;
+        const heapify = (i) => {
+            const left = 2 * i + 1;
+            const right = 2 * i + 2;
+            let max = i;
+            if (left < l && arr[left][1] > arr[max][1]) max = left;
+            if (right < l && arr[right][1] > arr[max][1]) max = right;
+            if (max !== i) {
+                [arr[max], arr[i]] = [arr[i], arr[max]];
+                heapify(max);
+            }
+        };
+
+        for (let i = Math.floor(l / 2); i >= 0; i -= 1) heapify(i);
+        for (i = arr.length - 1; i > 0; i--) {
+            [arr[0], arr[i]] = [arr[i], arr[0]];
+            l--;
+            heapify(0);
+        }
+        return arr;
     },
     shell: function (arr) {
         let n = arr.length;
