@@ -44,7 +44,7 @@ function automateSort(arr, options = { valuePath: "" }) {
 
         return result;
     } catch (err) {
-        return new Error(err);
+        return [err.message];
     }
 }
 
