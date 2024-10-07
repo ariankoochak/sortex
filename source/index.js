@@ -51,10 +51,9 @@ function automateSort(arr, options = { valuePath: "" }) {
 
 
 // const res = manualSort(StudentList, { sortAlgorithm: "bubble", valuePath: "score" });
-const res = manualSort([3,4,2],{sortAlgorithm : "bubble",valuePath : "score"});
+// const res = manualSort([3,4,2],{sortAlgorithm : "bubble",valuePath : "score"});
 // const res = manualSort(StudentList,{sortAlgorithm : "bubble",valuePath : "score"});
-
-console.log(res);
+// console.log(res);
 
 
 module.exports = {
