@@ -1,5 +1,5 @@
 const analyzeArrayCondition = require("./lib/analyzeArrayCondition");
-const isWrongDatas = require("./lib/isWrongDatas");
+const checkError = require("./lib/checkError");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
 const generateMainArr = require("./lib/generateMainArr");
 const optimizeArray = require("./lib/optimizeArray");
@@ -9,11 +9,7 @@ function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valueP
     try {
         const { arrayCondition, sortAlgorithm, valuePath} = options;
 
-        const isHaveError = isWrongDatas(arr,arrayCondition,sortAlgorithm,valuePath);
-
-        if (isHaveError === true) {
-            throw Error
-        }
+        checkError(arr, arrayCondition, sortAlgorithm, valuePath);
         
         const sortFunction = findBestSortAlgorithm(arrayCondition,sortAlgorithm);
         const optimizedArray = optimizeArray(arr,valuePath);
@@ -36,10 +32,7 @@ function automateSort(arr, options = { valuePath: "" }) {
 
         const arrayCondition = analyzeArrayCondition(optimizedArray);
 
-        const error = errorCatching(arr,arrayCondition,sortAlgorithm,valuePath);
-        if (error !== undefined) {
-            throw new Error(error);
-        }
+        checkError(arr,arrayCondition,sortAlgorithm,valuePath);
 
         const sortFunction = findBestSortAlgorithm(
             arrayCondition,
