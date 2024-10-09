@@ -3,8 +3,6 @@ const checkError = require("./lib/checkError");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
 const generateMainArr = require("./lib/generateMainArr");
 const optimizeArray = require("./lib/optimizeArray");
-//FIXME: delete next line for release
-const {StudentList} = require('./tests/arraysForTest/randomArray')
 
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''}){
     try {
@@ -48,13 +46,6 @@ function automateSort(arr, options = { valuePath: "" }) {
         return [err.message];
     }
 }
-
-
-//FIXME: delete lines for release
-// const res = manualSort(StudentList, { sortAlgorithm: "bubble", valuePath: "score" });
-// const res = manualSort([3,4,2],{sortAlgorithm : "bubble",valuePath : "score"});
-// const res = manualSort(StudentList,{sortAlgorithm : "bubble",valuePath : "score"});
-// console.log(res);
 
 
 module.exports = {
