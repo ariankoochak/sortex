@@ -130,7 +130,7 @@ const sorts = {
         return arr;
     },
     quick: function (arr) {
-        function partition(arr, low, high) {
+        const partition = (arr, low, high) => {
             let pivot = arr[high];
             let i = low - 1;
 
@@ -144,7 +144,7 @@ const sorts = {
             return i + 1;
         }
 
-        function quickSort(arr, low, high) {
+        const quickSort = (arr, low, high) =>{
             if (low >= high) return;
             let pi = partition(arr, low, high);
 
