@@ -1,6 +1,13 @@
 const findValue = require("./findValue");
 
 module.exports = function (arr, valuePath) {
+
+    if(valuePath === '0'){
+        return arr.map((value,index)=>{
+            return [index,value];
+        });
+    }
+
     const rtnArray = []
     for(let i = 0; i < arr.length;i++){
         let compareData;
