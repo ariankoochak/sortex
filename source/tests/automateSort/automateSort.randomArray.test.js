@@ -46,7 +46,7 @@ test("automateSort", () => {
     expect(test()).toEqual(SortedNestedArray);
 });
 
-//FIXME: fix code for this array
+
 test("automateSort", () => {
     const test = () => {
         return automateSort([2,7,3,1,96,33,24,13], {
