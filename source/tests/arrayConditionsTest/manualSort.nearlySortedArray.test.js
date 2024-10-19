@@ -8,6 +8,7 @@ const {
     SortedNestedArray,
     UsersDatasArrayMode,
     SortedUsersDatasArrayMode,
+    SortedStudentListWithAlphabet,
 } = require("../arraysForTest/nearlySortedArray");
 
 test("manualSort => StudentList test with arrayCondition : nearly sorted", () => {
@@ -50,3 +51,12 @@ test("manualSort => UsersDatasArrayMode test with arrayCondition : nearly sorted
     expect(test()).toEqual(SortedUsersDatasArrayMode);
 });
 
+test("manualSort => StudentList test with arrayCondition : nearly sorted", () => {
+    const test = () => {
+        return manualSort(StudentList, {
+            valuePath: "name",
+            arrayCondition: "nearly-sorted",
+        });
+    };
+    expect(test()).toEqual(SortedStudentListWithAlphabet);
+});

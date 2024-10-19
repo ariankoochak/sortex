@@ -63,6 +63,38 @@ const SortedStudentList = [
         score: "20",
     },
 ];
+const SortedStudentListWithAlphabet = [
+    {
+     lastName: "Elahi",
+     name: "Abbas",
+     "score": "20",
+   },
+   {
+     lastName: "mohammadi",
+     "name": "Ali",
+     score: "15.5",
+   },
+   {
+     lastName: "Elahi",
+     name: "Arian",
+     score: "18",
+   },
+   {
+     lastName: "Elahi",
+     name: "Hossein",
+     score: "19",
+   },
+   {
+     lastName: "Karimi",
+     name: "Jafar",
+     score: "14",
+   },
+   {
+     lastName: "Hosseini",
+     name: "Reza",
+     score: "11",
+   },
+ ]
 
 const UsersDatas = [
     {
@@ -253,6 +285,7 @@ const SortedNestedArray = [
 module.exports = {
     StudentList,
     SortedStudentList,
+    SortedStudentListWithAlphabet,
     UsersDatas,
     SortedUsersDatas,
     UsersDatasArrayMode,
