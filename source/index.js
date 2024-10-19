@@ -2,6 +2,7 @@ const analyzeArrayCondition = require("./lib/analyzeArrayCondition");
 const checkError = require("./lib/checkError");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
 const generateMainArr = require("./lib/generateMainArr");
+const getSpecificArray = require("./lib/getSpecificArray");
 const optimizeArray = require("./lib/optimizeArray");
 
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''}){
@@ -47,11 +48,22 @@ function automateSort(arr, options = { valuePath: "" }) {
     }
 }
 
+function getSpecificData(arr,options = {valuePath : ""}){
+    try {
+        const {valuePath} = options;
+        const rtnArr = getSpecificArray(arr,valuePath);
+        return rtnArr;
+    } catch (err) {
+        return [err.message]
+    }
+}
+
 
 module.exports = {
     manualSort,
     automateSort,
-}
+    getSpecificData,
+};
 
 
 
