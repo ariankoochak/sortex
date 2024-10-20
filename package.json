@@ -1,5 +1,5 @@
 {
-  "name": "order-js",
+  "name": "sortex",
   "version": "0.1.0",
   "description": "A package for every sort",
   "main": "./source/index.js",
@@ -8,10 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ariankoochak/order-js.git"
+    "url": "git+https://github.com/ariankoochak/sortex.git"
   },
   "keywords": [
     "sort",
+    "sorting",
     "order",
     "javascript",
     "node",
@@ -32,9 +33,9 @@
   "author": "Arian Koochak",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ariankoochak/order-js/issues"
+    "url": "https://github.com/ariankoochak/sortex/issues"
   },
-  "homepage": "https://github.com/ariankoochak/order-js#readme",
+  "homepage": "https://github.com/ariankoochak/sortex#readme",
   "dependencies": {
     "jest": "^29.7.0"
   }

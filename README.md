@@ -1,19 +1,19 @@
-# order-js
-**order-js** is an open source package created to make it easy to sort arrays based on a specific value contained in each array element. Using this package, you can easily use any sorting algorithm you want. Sort an array and get the best result and perform the fastest sort based on the state of your array.
+# sortex
+**sortex** is an open source package created to make it easy to sort arrays based on a specific value contained in each array element. Using this package, you can easily use any sorting algorithm you want. Sort an array and get the best result and perform the fastest sort based on the state of your array.
 
 ## install
 This is a [Node.js](https://nodejs.org/en/) module available through the
 [npm registry](https://www.npmjs.com/). Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 ```sh
-$ npm install order-js
+$ npm install sortex
 ```
 ## Usage
-To use order-js, you must call it according to your use of common js or es module
+To use sortex, you must call it according to your use of common js or es module
 
 Common JS
 ```js
-const {manualSort} = require('order-js'); //common js
+const {manualSort} = require('sortex'); //common js
 
 manualSort(StudentList, {valuePath: "score",sortAlgorithm: "quick3",});
 ```
@@ -21,12 +21,12 @@ manualSort(StudentList, {valuePath: "score",sortAlgorithm: "quick3",});
 
 ES Module
 ```js
-import {manualSort} from 'order-js'; //ES Module
+import {manualSort} from 'sortex'; //ES Module
 
 manualSort(StudentList, {valuePath: "score",sortAlgorithm: "quick3",});
 ```
 ## Features
-In the following, you can see how to sort and the features of order-js
+In the following, you can see how to sort and the features of sortex
 ### manual sort
 `manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''})`
 
@@ -78,7 +78,7 @@ In this method, you can manually enter the name of the algorithm that you want t
     | random few unique      | `random-few-unique`      |
 #### usage
 ```js
-import {manualSort} from 'order-js';
+import {manualSort} from 'sortex';
 
 const StudentList = [
     {
@@ -174,7 +174,7 @@ In this method, you only have to enter the path of the value that you want the a
     ⚠️ **valuePath is required!** ⚠️
 #### usage
 ```js
-import {automateSort} from 'order-js';
+import {automateSort} from 'sortex';
 
 const StudentList = [
     {
@@ -270,7 +270,7 @@ Suppose you want to have a new array with a certain value of each index. This me
     ⚠️ **valuePath is required!** ⚠️
 #### usage
 ```js
-import {getSpecificData} from 'order-js';
+import {getSpecificData} from 'sortex';
 
 const StudentList = [
     {
