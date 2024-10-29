@@ -27,6 +27,13 @@ manualSort(StudentList, {valuePath: "score",sortAlgorithm: "quick3",});
 ```
 ## Features
 In the following, you can see how to sort and the features of sortex
+
+[manualSort](#manual-sort)
+[automatedSort](#automate-sort)
+[getSpecificDatas](#get-specific-datas)
+[getBiggest](#get-biggest-or-smallest-data)
+[getSmallest](#get-biggest-or-smallest-data)
+
 ### manual sort
 `manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''})`
 
