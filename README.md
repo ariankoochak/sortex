@@ -312,3 +312,71 @@ result => ["20","18","19","15.5","11","14"]
 ```
 
 
+
+### get biggest or smallest data
+`getBiggest(arr,options = {valuePath : ""}) | getSmallest(arr,options = {valuePath : ""})`
+
+With this method, you can find the biggest data or the smallest one based on an arbitrary value in the data in your array.
+- ***valuePath*** ➜ In this parameter, you must pass the path of the value that you want the array to be sorted based on as a string to the method.For example, in this array:
+    ```js
+        [
+            {
+                name : 'Abbas',
+                lastName : 'Elahian',
+                result : {
+                    score : ['math',20],
+                    grade : 12,
+                }
+            },
+            ...
+        ]
+    ```
+    if we want to sort the values ​​of the array based on **result→score→index 1 in score array**, the value of our valuePath will be `result.score.1`.
+
+    ⚠️ **valuePath is required!** ⚠️
+#### usage
+```js
+import {getSpecificData} from 'sortex';
+
+const StudentList = [
+    {
+        name: "Abbas",
+        lastName: "Elahian",
+        score: "20",
+    },
+    {
+        name: "Arian",
+        lastName: "Elahi",
+        score: "18",
+    },
+    {
+        name: "Hossein",
+        lastName: "Elyasipoor",
+        score: "19",
+    },
+    {
+        name: "Ali",
+        lastName: "mohammadi",
+        score: "15.5",
+    },
+    {
+        name: "Reza",
+        lastName: "Hosseini",
+        score: "11",
+    },
+    {
+        name: "Jafar",
+        lastName: "Karimi",
+        score: "14",
+    },
+];
+
+const b = getBiggest(StudentList, {valuePath: "score"});
+const s = getSmallest(StudentList, {valuePath: "score"});
+
+/*
+b => {name: "Abbas",lastName: "Elahian",score: "20"}
+
+c => {name: "Reza",lastName: "Hosseini",score: "11"}
+*/
+```

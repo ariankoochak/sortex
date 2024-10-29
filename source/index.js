@@ -1,6 +1,8 @@
 const analyzeArrayCondition = require("./lib/analyzeArrayCondition");
 const checkError = require("./lib/checkError");
 const findBestSortAlgorithm = require("./lib/findBestSortAlgorithm");
+const findBiggestValue = require("./lib/findBiggestValue");
+const findSmallestValue = require("./lib/findSmallestValue");
 const generateMainArr = require("./lib/generateMainArr");
 const getSpecificArray = require("./lib/getSpecificArray");
 const optimizeArray = require("./lib/optimizeArray");
@@ -58,11 +60,35 @@ function getSpecificData(arr,options = {valuePath : ""}){
     }
 }
 
+function getBiggest(arr,options = {valuePath : ""}){
+    try {
+        const {valuePath} = options;
+        const optimizedArray = optimizeArray(arr, valuePath);
+        const smallestDataIndex = findBiggestValue(optimizedArray)[0];
+        return arr[smallestDataIndex];
+    } catch (err) {
+        return [err.message]
+    }
+}
+
+function getSmallest(arr,options = {valuePath: ""}){
+    try {
+        const { valuePath } = options;
+        const optimizedArray = optimizeArray(arr, valuePath);
+        const smallestDataIndex = findSmallestValue(optimizedArray)[0];
+        return arr[smallestDataIndex];
+    } catch (err) {
+        return [err.message]
+    }
+}
+
 
 module.exports = {
     manualSort,
     automateSort,
     getSpecificData,
+    getBiggest,
+    getSmallest,
 };
 
 
