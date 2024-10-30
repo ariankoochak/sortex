@@ -6,7 +6,13 @@ const findSmallestValue = require("./lib/findSmallestValue");
 const generateMainArr = require("./lib/generateMainArr");
 const getSpecificArray = require("./lib/getSpecificArray");
 const optimizeArray = require("./lib/optimizeArray");
-
+/**
+ * 
+ * @param {Object} options 
+ * @param {"random" | "nearly-sorted" | "reversed" | "random-few-unique"} options.arrayCondition 
+ * @param {"insertion" | "selection" | "bubble" | "merge" | "heap" | "shell" | "quick3" | "quick"} options.sortAlgorithm 
+ * @returns {Array}
+ */
 function manualSort(arr,options = {arrayCondition : '',sortAlgorithm : '',valuePath : ''}){
     try {
         const { arrayCondition, sortAlgorithm, valuePath} = options;
