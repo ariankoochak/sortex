@@ -72,10 +72,13 @@ In this method, you can manually enter the name of the algorithm that you want t
 
 - **arrayCondition** ➜ With this parameter, you can specify the state of your array so that the best algorithm is selected according to the state of your array and that algorithm is used for sorting.
     
-    ・*random* → All values ​​of the array are distributed completely randomly and no particular order can be found in the array
-    ・*nearly sorted* → The array is almost ordered, but some values ​​are not in the right place
-    ・*reversed* → The array is almost in reverse order, but still some values ​​are not in the right place
-    ・*random few unique* → The different values ​​of the array are several numbers that are repeated in different indexes and several values ​​use that number.
+    ・***random*** → All values ​​of the array are distributed completely randomly and no particular order can be found in the array
+
+    ・***nearly sorted*** → The array is almost ordered, but some values ​​are not in the right place
+
+    ・***reversed*** → The array is almost in reverse order, but still some values ​​are not in the right place
+
+    ・***random few unique*** → The different values ​​of the array are several numbers that are repeated in different indexes and several values ​​use that number.
 
     | condition | arrayCondition value |
     |--------|--------|
